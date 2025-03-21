@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/areas.css">
+</head>
+<body>
+    <nav id="indice">
+        <ul>
+            <li><a href="#rectangulo">Rectángulo</a></li>
+            <li><a href="#triangulo">Triángulo</a></li>
+            <li><a href="#rombo">Rombo</a></li>
+            <li><a href="#cuadrado">Cuadrado</a></li>
+            <li><a href="#paralelogramo">Paralelogramo</a></li>
+            <li><a href="#trapecio">Trapecio</a></li>
+            <li><a href="#romboide">Romboide</a></li>
+            <li><a href="#poligono">Polígono regular</a></li>
+            <li><a href="#circulo">Círculo</a></li>
+        </ul>
+    </nav>
+
+    <div class="div-operaciones">
+        <div class="div-formulario">
+            <div class="div-rectangulo" id="rectangulo">
+                <h2>Rectángulo</h2>
+                <img src="IMAGENES/rectangulo.webp" alt="Rectángulo">
+            </div>
+            <div class="div-campos">
+                <input type="number" id="rectangulo-base" placeholder="Base" value="">
+                <input type="number" id="rectangulo-altura" placeholder="Altura" value="">
+                <input type="button" value="Calcular área" onclick="rectangulo();">
+                <div id="resultado-rectangulo" class="resultado"></div>
+                <a href="#indice">
+                    <button>Volver a inicio</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="div-formulario">
+            <div class="div-triangulo" id="triangulo">
+                <h2>Triángulo</h2>
+                <img src="IMAGENES/triangulo.jpg" alt="Triángulo">
+            </div>
+            <div class="div-campos">
+                <input type="number" id="triangulo-base" placeholder="Base" value="">
+                <input type="number" id="triangulo-altura" placeholder="Altura" value="">
+                <input type="button" value="Calcular área" onclick="triangulo();">
+                <div id="resultado-triangulo" class="resultado"></div>
+                <a href="#indice">
+                    <button>Volver a inicio</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="div-formulario">
+            <div class="div-rombo" id="rombo">
+                <h2>Rombo</h2>
+                <img src="IMAGENES/rombo.jpg" alt="Rombo">
+            </div>
+            <div class="div-campos">
+                <input type="number" id="rombo-diagonalmayor" placeholder="Diagonal mayor" value="">
+                <input type="number" id="rombo-diagonalmenor" placeholder="Diagonal menor" value="">
+                <input type="button" value="Calcular área" onclick="rombo();">
+                <div id="resultado-rombo" class="resultado"></div>
+                <a href="#indice">
+                    <button>Volver a inicio</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="div-formulario">
+            <div class="div-cuadrado" id="cuadrado">
+                <h2>Cuadrado</h2>
+                <img src="IMAGENES/cuadrado.jpg" alt="Cuadrado">
+            </div>
+            <div class="div-campos">
+                <input type="number" id="cuadrado-diagonal" placeholder="Diagonal al cuadrado" value="">
+                <input type="button" value="Calcular área" onclick="cuadrado();">
+                <div id="resultado-cuadrado" class="resultado"></div>
+                <a href="#indice">
+                    <button>Volver a inicio</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="div-formulario">
+            <div class="div-paralelogramo" id="paralelogramo">
+                <h2>Paralelogramo</h2>
+                <img src="IMAGENES/paralelogramo.png" alt="Paralelogramo">
+            </div>
+            <div class="div-campos">
+                <input type="number" id="paralelogramo-base" placeholder="Base" value="">
+                <input type="number" id="paralelogramo-altura" placeholder="Altura" value="">
+                <input type="button" value="Calcular área" onclick="paralelogramo();">
+                <div id="resultado-paralelogramo" class="resultado"></div>
+                <a href="#indice">
+                    <button>Volver a inicio</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="div-formulario">
+            <div class="div-trapecio" id="trapecio">
+                <h2>Trapecio</h2>
+                <img src="IMAGENES/trapecio.jpg" alt="Trapecio">
+            </div>
+            <div class="div-campos">
+                <input type="number" id="trapecio-basemayor" placeholder="Base mayor" value="">
+                <input type="number" id="trapecio-basemenor" placeholder="Base menor" value="">
+                <input type="number" id="trapecio-altura" placeholder="Altura" value="">
+                <input type="button" value="Calcular área" onclick="trapecio();">
+                <div id="resultado-trapecio" class="resultado"></div>
+                <a href="#indice">
+                    <button>Volver a inicio</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="div-formulario">
+            <div class="div-romboide" id="romboide">
+                <h2>Romboide</h2>
+                <img src="IMAGENES/romboide.jpg" alt="Romboide">
+            </div>
+            <div class="div-campos">
+                <input type="number" id="romboide-diagonalmayor" placeholder="Diagonal mayor" value="">
+                <input type="number" id="romboide-diagonalmenor" placeholder="Diagonal menor" value="">
+                <input type="button" value="Calcular área" onclick="romboide();">
+                <div id="resultado-romboide" class="resultado"></div>
+                <a href="#indice">
+                    <button>Volver a inicio</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="div-formulario">
+            <div class="div-poligono" id="poligono">
+                <h2>Polígono regular</h2>
+                <img src="IMAGENES/polígono.png" alt="Polígono">
+            </div>
+            <div class="div-campos">
+                <input type="number" id="poligono-perimetro" placeholder="Perímetro" value="">
+                <input type="number" id="poligono-apotema" placeholder="Apotema" value="">
+                <input type="button" value="Calcular área" onclick="poligono();">
+                <div id="resultado-poligono" class="resultado"></div>
+                <a href="#indice">
+                    <button>Volver a inicio</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="div-formulario">
+            <div class="div-circulo" id="circulo">
+                <h2>Círculo</h2>
+                <img src="IMAGENES/circulo.jpg" alt="Círculo">
+            </div>
+            <div class="div-campos">
+                <input type="number" id="circulo-radio" placeholder="Radio al cuadrado" value="">
+                <input type="number" id="pi" value="3.14159" disabled>
+                <input type="button" value="Calcular área" onclick="circulo();">
+                <div id="resultado-circulo" class="resultado"></div>
+                <a href="#indice">
+                    <button>Volver a inicio</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="JS/areas.js"></script>
+</body>
+</html>
